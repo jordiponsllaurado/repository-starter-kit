@@ -1,0 +1,10 @@
+{
+  "name": "repository-starter-kit",
+  "version": "1.0.0",
+  "description": "Javascript repository starter kit",
+  "scripts": {},
+  "author": "Jordi Pons",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
