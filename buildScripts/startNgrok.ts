@@ -1,8 +1,8 @@
-const ngrok = require("ngrok");
-var chalk = require("chalk");
+import * as ngrok from "ngrok";
+import * as chalk from "chalk";
 
 (async function () {
-  const url = await ngrok.connect(3000);
+  const url = await ngrok.connect({ addr: 8080, host_header: 8080 });
   const apiUrl = ngrok.getUrl();
 
   console.log(chalk.green(`Shareable link: ${url}`));
