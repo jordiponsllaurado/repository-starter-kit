@@ -2,9 +2,20 @@
   "name": "repository-starter-kit",
   "version": "1.0.0",
   "description": "Javascript repository starter kit",
-  "scripts": {},
+  "scripts": {
+    "prestart": "node buildScripts/startMessage.js",
+    "start": "node buildScripts/srcServer.js",
+    "start:ngrok": "node buildScripts/startNgrok.js",
+    "share": "npm-run-all --parallel start start:ngrok"
+  },
   "author": "Jordi Pons",
   "license": "MIT",
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "chalk": "^4.1.0",
+    "express": "^4.17.1",
+    "ngrok": "^3.2.7",
+    "npm-run-all": "^4.1.5",
+    "open": "^7.0.4"
+  }
 }
