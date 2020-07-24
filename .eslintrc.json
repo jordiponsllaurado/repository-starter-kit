@@ -1,0 +1,26 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "react"],
+  "extends": [
+    "airbnb",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "prettier/react"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "rules": {
+    "comma-dangle": ["error", { "functions": "ignore" }],
+    "arrow-parens": ["error", "as-needed"],
+    "no-use-before-define": ["error", { "variables": false }],
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+    "jsx-a11y/anchor-is-valid": 0
+  }
+}
